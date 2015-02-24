@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="pagestyle.css">
+	</head>
+	<body>
+		<h1>Stage 1</h1>
+
+		<div class="lesson">
+			<h2>1. The Basics of the Web and HTML:</h2>
+			<div class="notes">
+				<div class="concept-title">
+					<span class="bold">The Basics of the <a href=" http://en.wikipedia.org/wiki/Web_page"<a> Web</a></span>
+				</div>
+				<div class="concept-description">
+					<p>
+						<span class="bold">The web (www):</span> collection of html documents (HyperText Markup Language). HTML is what glues the Internet together. Around 30 billion pages
+					</p>
+					<p>
+						<span class="bold">Main pieces:</span> you, your computer + browser (a program to display files found on the web), the internet (the world largest computer network), http (the main protocol of the web), servers (computer in a closer that host the files)
+					</p>
+					<p>
+						<span class="bold">HTML (Hyper Text markup language):</span> is made up of text content (what you see), markup (what it looks like), references to other documents (e.g.: images + videos), links to other pages
+					</p>
+					<p>
+						<span class="bold">Computers are Stupid:</span>
+						Programmers need to write exactly the way a computer understands (also known as writing with correct "syntax").
+					</p>
+					<p>
+						<span class="bold">Programmers Can't Remember Everything:</span>
+						There are too many details to keep everything in your head.
+					</p>
+				</div>
+				<div class="concept-title">
+					<span class="bold">Basics of <a href="http://en.wikipedia.org/wiki/HTML">HTML </a></span>
+				</div>
+				<div class="concept-description">
+					<p>
+						<span class="bold">Basic HTML Vocabulary:</span>
+						<span class="italic"><br>Tag:</span> An HTML tag is always contained within angled brackets. Most tags have an opening tag (&lt;p&gt; for example) and a closing tag, (&lt;/p&gt;). Some tags (called "void" tags) do not require a closing tag (like the &lt;br&gt; tag).<br>
+						<span class="italic">Element:</span> An HTML element refers to everything within a set of opening and closing tags.<br>
+						<span class="italic">Attribute:</span> This is a property of an HTML element. For example, to set thehref attribute of an anchor tag to the Udacity URL, you would write&lt;a href="www.udacity.com"&gt;
+					</p>
+					<p>
+						<span class="bold">HTML Structure: </span>there are many tags. An opening for the type of document !DOCTYPE HTML>. Then HTML opening html>. Then head (metadata, title, etc.). then body. 
+					</p>
+					<p>
+						<span class="bold">Whitespace: </span> all blank in html translates to a space. For a new line: br break (void). It's an inline element. Br ends a line
+					</p>
+					<p>
+						<span class="bold">Paragraph tag:</span> It's a block element. It's rendering an invisible box around the text. There are also <span class="italic">container elements</span>
+					</P>
+					<p>
+						<span class="bold">Span (inline) / Div (block):</span> they just contain the content, and you can add styles to them
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2>2. Creating a structured document with HTML:</h2>
+			<div class="notes">
+				<div class="concept-title">
+					Intro to HTML and CSS
+				</div>
+				<div class="concept-description">
+					<p>
+						<span class="bold">How do you translate a design to a website?</span><br>
+						Think of a website like a house:<br>
+						- HTML: structure<br>
+						- CSS: style (decoration, colors,...)<br>
+						- Javascript: interactive components (remote control, garage door open, etc...)<br>
+						- Tools to build it
+					</p>
+					<p>
+						<span class="bold">HTML:</span> language of the web, specific syntax. Basic word is a tag. The browser turns the tags into elements that form a tree (HTML Tree-like structure or branching structure)<br>
+						All visible elements are rectangular on a webpage, all visible text is on the code. HTML elements are either inline or block.<br>
+						It does this thanks to Document Object Model (standard convention). Each HTML creates an element in the DOM that the browser uses to display the page. It can be empty, content or another element. Each tag has a name or type. Each tag can also have attributes with values.
+					</p>
+					<p>
+						<span class="bold">CSS:</span> another language. Allows to use specific syntax and rules to change how elements look on the page: font, size, background, position, color, etc.
+					</P>
+					<p>
+						<span class="bold">To tie HTML and CSS:</span> the HTML document can provide the browser with information on what style to use and where to get it.
+					</p>
+					<p>
+						<span class="bold">Everything is a box in a webpage:</span> Boxify a Design. Breakdown any design into boxes. Move from big to the small. <span class="bold">&lt;div&gt;</span> to separate boxes. Add class names to identify them.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h2>3. Adding CSS Style to HTML Structure:</h2>
+			<div class="notes">
+				<div class="concept-title">
+					<span class="bold">Basics of <a href="http://en.wikipedia.org/wiki/CSS">CSS </a></span>
+				</div>
+				<div class="concept-description">
+					<p>
+						<span class="bold">CSS stands for "Cascading Style Sheets"</span><br>
+						You can have several CSS files referenced in an HTML file. Most specific rule applies (Cascading)<br>
+						Style can be added on the same HTML file in between style tags and even inline (not a good idea)
+					</p>
+					<p>
+						<span class="bold">Inheritance:</span> is a key feature in CSS, it relies on the ancestor-descendant relationship to operate. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants. It relies on the document tree. In general, descendant elements inherit text-related properties, but box-related properties are not inherited.<br>
+						In CSS you first write a selector, to identify what the style will be applied to. Another way is to select elements by class (attribute, column, value).<br>
+						CSS properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference<br>
+						Changing the style properties of an element only changes how the element is displayed, not the element itself
+					</p>
+					<p>
+						<span class="bold">Box Sizing:</span><br>
+						1. HTML elements are boxes and each box has 4 components<br>
+						2. Because there are so many components to each box, it can often be hard to get the size of a box just right<br>
+						3. There are two techniques you can use to help deal with sizing issues:<br>
+						- Set sizes in terms of percents rather than pixels<br>
+						- Set the box-sizing attribute to border-box for every element<br>
+						4. Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently
+					</p>
+					<p>
+						<span class="bold">Box Positioning:</span><br>
+						- Divs are block elements (as opposed to inline), so by default they take up the entire width of a page<br>
+						- Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other<br>
+					</p>
+				</div>
+				<div class="concept-title">
+					<span class="bold">Other takeaways</span>
+				</div>
+				<div class="concept-description">
+					<p>
+						<span class="bold">Code - test - refine:</span><br>
+						1. Look for natural boxes<br>
+						2. Look for repeated styles and semantic elements (relate to HTML)<br>
+						3. Write HTML<br>
+						4. Apply styles: from biggest to smallest<br>
+						5. Fix things (resize windows, other browsers, etc.)<br>
+					</p>
+					<p>
+						In HTML, code comments begin with greater!-- and end with -->. Everything in between is ignored. In CSS, code comments begin with /* and end with */.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
