@@ -1,13 +1,10 @@
-/* This is a CSS comment.*/
-
-
 h1{
 	text-align: center;
 	color: white;
 }
 
 body{
-	font-family: Roboto;
+	font-family: sans-serif;
 	background-color: rgb(113,117,0);
 }
 
@@ -52,8 +49,4 @@ h2 {
 
 .italic {
     font-style: italic;
-}
-
-.bold {
-    font-weight: bold;
 }
