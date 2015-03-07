@@ -50,3 +50,19 @@ h2 {
 .italic {
     font-style: italic;
 }
+
+.ulist1 { 
+	list-style: square;
+	padding-left: 1.2em;
+	margin-top: -12px;
+}
+
+.ulist2 { 
+	list-style: circle;
+	padding-left: 1.2em;
+}
+
+.olist1 { 
+	margin-top: -12px;
+	padding-left: 1.2em;
+}
